@@ -1,0 +1,26 @@
+.amanha{
+  color: darkblue;
+}
+
+.hoje{
+  color: darkred;
+}
+
+h2 a {
+  text-decoration: none;
+  color: chocolate;
+
+}
+
+h2 a:hover {
+  text-decoration: underline;
+  color: orange;
+}
+
+p {
+  font-size: 20px;
+}
+
+body {
+  font-family: Arial;
+}

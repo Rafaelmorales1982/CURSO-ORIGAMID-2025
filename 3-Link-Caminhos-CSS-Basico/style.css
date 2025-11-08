@@ -1,0 +1,10 @@
+a { 
+  /* Cor do texto do link */
+  color: black;
+  /* Remove o sublinhado padrão dos links */
+  text-decoration: none;
+}
+a {
+  color: tomato;
+  font-size: 32px;
+}

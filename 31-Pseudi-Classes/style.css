@@ -1,0 +1,35 @@
+a {
+  display: inline-block;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  font-family: Arial;
+  text-decoration: none;
+  background: #caf;
+  color: #217;
+  transition: 0.3s;
+}
+
+/*Utilizando pseudo seletor*/
+/* Mouse por cima*/
+a:hover {
+  /* font-size: 3rem; */
+  background: #adf;
+  color: #147;
+}
+
+/*Utilizando focu ao clicar tab*/
+a:focus {
+  background: #cfa;
+  color: #371;
+  border: 2px solid black;
+}
+
+a:active {
+  background: #ffa;
+  color: #761;
+}
+
+/* a:visited{
+  background: #fba;
+  color: #731;
+} */

@@ -1,0 +1,53 @@
+.flex {
+  display: flex; 
+  /* Define o container como um flex container, ativando o modelo de layout flexível. 
+     Isso permite alinhar e distribuir os elementos filhos de forma mais eficiente. */
+
+  flex-wrap: wrap;
+  /* Permite que os itens “quebrem” para a próxima linha se não couberem em uma só, 
+     mantendo a responsividade do layout. */
+
+  gap: 20px;
+  /* Cria um espaçamento de 20px entre os itens do container, 
+     tanto na horizontal quanto na vertical. */
+
+  /* justify-content: center;
+  align-content: center;
+  height: 100vh; */
+  /* Essas propriedades estão comentadas. 
+     Se fossem ativadas:
+       - justify-content: center; → centralizaria os itens no eixo horizontal.
+       - align-content: center; → centralizaria o conjunto de linhas no eixo vertical.
+       - height: 100vh; → faria o container ocupar toda a altura da janela do navegador. */
+
+  place-items: center;
+  /* É uma forma abreviada de definir align-items e justify-items simultaneamente.
+     No contexto do flexbox, atua apenas como align-items: center, 
+     centralizando os itens no eixo transversal (vertical). */
+}
+
+h2 {
+  background: #e7e7e7;
+  /* Define uma cor de fundo cinza claro para o elemento <h2>. */
+
+  border: 1px solid #d7d7d7;
+  /* Aplica uma borda fina e sólida de cor cinza um pouco mais escura. */
+
+  padding: 20px;
+  /* Cria um espaçamento interno de 20px entre o conteúdo e a borda. */
+
+  margin: 0px;
+  /* Remove qualquer espaçamento externo padrão do <h2>. */
+
+  flex: 1;
+  /* Faz com que cada <h2> dentro do container flex ocupe proporcionalmente 
+     o mesmo espaço disponível, ajustando-se ao tamanho do container. */
+}
+
+/*Utilizando GRid*/
+.grid{
+   margin-top: 60px;
+   display: grid;
+   gap: 20px;
+   grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+}

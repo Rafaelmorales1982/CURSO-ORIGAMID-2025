@@ -1,0 +1,64 @@
+/*tag pai dos pseudos elements - before e after - foi utilizado position absolute*/
+h1 {
+  position: relative;
+}
+
+/*Criando pseudo element antes do (h1)*/
+h1::before {
+  content: " ";
+  display: block;
+  width: 6.25rem; /*100 / 16 = 6.25rem*/
+  height: 0.5rem; /*8 / 16 = 0.5rem*/
+  background: #caf;
+  margin: 0px;
+  position: absolute;
+  left: 1px;
+  top: -3px;
+}
+
+/*Criando pseudo element depois do (h1)*/
+h1::after {
+  content: " ";
+  display: block;
+  width: 6.25rem; /*100 / 16 = 6.25rem*/
+  height: 0.5rem; /*8 / 16 = 0.5rem*/
+  background: #faf;
+  margin: 0px;
+  position: absolute;
+  top: 32px;
+  left: 124px;
+}
+
+/*Tirando o stilo da lista*/
+ul {
+  list-style: none;
+}
+
+/*Colocando novos elementos na lista no itens com ::before*/
+li::before {
+  content: " ";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background: linear-gradient(#caf, #faf);
+  border: 2px solid #caf;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+li {
+  font-size: 1.5rem; /*24px*/
+  display: flex;
+  align-items: center;
+}
+
+/*Pseudos element para pintar o primeiro parágrafo*/
+p::first-line {
+  font-weight: bold;
+}
+
+/*Pseudo element - pinta a primeira letra do texto*/
+p::first-letter {
+  font-size: 2rem;
+  color: blueviolet;
+}

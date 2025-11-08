@@ -1,0 +1,5 @@
+#Primeira coisa 
+1° git config --global user.name "Rafaelmorales1982"
+2° git config --global user.email "rafaelmorconcursos@gmail.com"
+
+
