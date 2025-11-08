@@ -1,5 +1,12 @@
 #Primeira coisa 
 1° git config --global user.name "Rafaelmorales1982"
 2° git config --global user.email "rafaelmorconcursos@gmail.com"
+git config --global user.passoword "Gabrielbalico2010@"
 
+3° git init
+4° git add .
+5° git branch -m master main  // renomeando branch para main
+6° git status // verifica o status
+7° git push -u origin main // para enviar
+8° git push -u origin main --force
 
